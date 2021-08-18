@@ -12,7 +12,7 @@ export class AppComponent {
     this.selezionato=name;
   }
   clean() {
-    this.selezionat=undefined;
+    this.selezionato=undefined;
   }
 
   postit = [
