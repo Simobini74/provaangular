@@ -8,11 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'prova progetto';
   selezionato: string;
+  dataselezionata: string;
+  selezionaData(data:string){
+    this.dataselezionata=data;
+  }
   seleziona(name:string){
     this.selezionato=name;
   }
   clean() {
-    this.selezionato=undefined;
+    this.dataselezionata=undefined;
   }
 
   postit = [

@@ -2,9 +2,9 @@
 
 <ul>
 <li *ngFor='let post of postit' >
-  <button (click)="seleziona(post.nome)">{{post.nome}}</button>  
+  <button (click)="selezionaData(post.data)">{{post.nome}}</button>  
 </li>
 </ul>
-<p *ngIf="selezionato !== undefined"> il post-it selezionato è {{selezionato}}
+<p *ngIf="dataselezionata !== undefined"> il post-it selezionato è del {{dataselezionata}}
 <button (click) = 'clean()'>Chiudi</button>
 </p>
