@@ -11,6 +11,9 @@ export class AppComponent {
   seleziona(name:string){
     this.selezionato=name;
   }
+  clean() {
+    this.selezionat=undefined;
+  }
 
   postit = [
     {

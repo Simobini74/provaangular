@@ -5,6 +5,6 @@
   <button (click)="seleziona(post.nome)">{{post.nome}}</button>  
 </li>
 </ul>
-<p *ngf="selezionato !== undefined"> il post-it selezionato è {{selezionato}}
+<p *ngIf="selezionato !== undefined"> il post-it selezionato è {{selezionato}}
 <button (click) = 'clean()'>Chiudi</button>
 </p>
