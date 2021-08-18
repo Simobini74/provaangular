@@ -23,7 +23,7 @@ export class AppComponent {
       nome: 'Post-it 3',
       data: '18 maggio',
       colore:'blu',
-      contenuto:'paper'
+      contenuto:'paperino'
     }
   ];
 }
