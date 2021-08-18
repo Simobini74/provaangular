@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prova progetto';
-  selezionata: string;
+  selezionato: string;
   seleziona(name:string){
-    this.selezionata=name;
+    this.selezionat=name;
   }
 
   postit = [
