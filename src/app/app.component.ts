@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'prova progetto';
   selezionato: string;
   seleziona(name:string){
-    this.selezionat=name;
+    this.selezionato=name;
   }
 
   postit = [

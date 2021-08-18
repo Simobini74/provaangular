@@ -5,4 +5,6 @@
   <button (click)="seleziona(post.nome)">{{post.nome}}</button>  
 </li>
 </ul>
-<p> il post-it selezionato è {{selezionato}}</p>
+<p *ngf="selezionato !== undefined"> il post-it selezionato è {{selezionato}}
+<button (click) = 'clean()'>Chiudi</button>
+</p>
