@@ -1,4 +1,12 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
+
+class Postit {
+  nome: string;
+  data: string;
+  colore: string;
+  temperatura: string;
+  contenuto: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -7,34 +15,36 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prova progetto';
-  selezionato: string;
-  dataselezionata: string;
-  selezionaData(data:string){
-    this.dataselezionata=data;
-  }
-  seleziona(name:string){
-    this.selezionato=name;
-  }
-  clean() {
-    this.dataselezionata=undefined;
-  }
-
-  postit = [
+  selezionato: Postit; 
+  postit:Array<Postit> = [
     {
       nome: 'Post-it 1',
       data: '14 luglio',
       colore: 'rosso',
-      contenuto: 'pippo'
+      contenuto: 'pippo',
+      temperatura:'25 gradi'
     }, {
       nome: 'Post-it 2',
       data: '14 agosto',
       colore: 'verde',
-      contenuto: 'pluto'
+      contenuto: 'pluto',
+      temperatura: '30 gradi'
     }, {
       nome: 'Post-it 3',
       data: '18 maggio',
       colore:'blu',
-      contenuto:'paperino'
+      contenuto:'paperino',
+      temperatura:'28 gradi'
     }
   ];
+  seleziona(itemName: string) {
+    var trovato: Array<Postit> = this.postit.filter(
+      el => ( el.nome === itemName )
+    );
+    this.selezionato = trovato[0];
+  }
+
+  clean() {
+    this.selezionato=undefined;
+  }
 }
