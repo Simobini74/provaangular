@@ -6,18 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'prova del mio progetto devo dare un titolo';
+  title = 'prova progetto';
 
-  cities = [
+  postit = [
     {
-      nome: 'Torino',
-      temperatura: '14'
+      nome: 'Post-it 1',
+      data: '14 luglio',
+      colore: 'rosso',
+      contenuto: 'pippo'
     }, {
-      nome: 'Milano',
-      temperatura: '15'
+      nome: 'Post-it 2',
+      data: '14 agosto',
+      colore: 'verde',
+      contenuto: 'pluto'
     }, {
-      nome: 'Genova',
-      temperatura: '18'
+      nome: 'Post-it 3',
+      data: '18 maggio',
+      colore:'blu',
+      contenuto:'paper'
     }
   ];
 }

@@ -1,7 +1,7 @@
 <h1> {{title}} </h1>
 
 <ul>
-<li *ngFor='let city of cities' >
-  <b>{{city.nome}}</b> - {{city.temperatura}}
+<li *ngFor='let post of postit' >
+  <b>{{post.nome}}</b> - {{post.data}} - {{post.colore}} - {{post.contenuto}}
 </li>
 </ul>
