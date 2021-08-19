@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'; 
+import { OpenweatherService } from './openweather.service';
 
 
 class Postit {
