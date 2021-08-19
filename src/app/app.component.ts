@@ -38,7 +38,7 @@ export class AppComponent {
       contenuto:'paperino',
       temperatura:'28 gradi'
     }
-  ];
+  ];  
   seleziona(itemName: string) {
     var trovato: Array<Postit> = this.postit.filter(
       el => ( el.nome === itemName )
