@@ -2,7 +2,7 @@
 
 <ul>
 <li *ngFor='let post of postit' >
-  <button (click)="seleziona(post.nome)">{{post.nome}}</button>  
+  <button (click)="refreshTemperature(post.nome)">{{post.nome}}</button>  
 </li>
 </ul>
 <p *ngIf="selezionato !== undefined"> il post-it {{selezionato.nome}} selezionato è del {{selezionato.temperatura}}

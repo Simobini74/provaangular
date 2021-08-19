@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'}
 )
 export class OpenweatherService {
-  apiKEY: string = 'bc260df0c6e7454670d4c0d378b85022'
+  apiKEY: string = 'f2e72c0506fe42ca90fe869aeca6b59a'
   apiURL: string = 'https://api.weatherbit.io/v2.0/current';
 
   constructor(private http: HttpClient) { }

@@ -38,13 +38,18 @@ export class AppComponent {
       contenuto:'paperino',
       temperatura:'28 gradi'
     }
-  ];  
-  seleziona(itemName: string) {
+  ]; 
+  constructor(private wbs: OpenweatherService) { } 
+  refreshTemperature(itemName: string) {
     var trovato: Array<Postit> = this.postit.filter(
       el => ( el.nome === itemName )
     );
     this.selezionato = trovato[0];
-  }
+    this.wbs.getData(this.selezionato.nome).subscribe(
+      ( x: any ) => this.selezionato.temperatura = x.data[0].temp,
+      err => console.error('Observer got an error: ' + err)
+    );
+ }
 
   clean() {
     this.selezionato=undefined;
