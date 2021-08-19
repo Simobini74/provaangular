@@ -5,6 +5,6 @@
   <button (click)="seleziona(post.nome)">{{post.nome}}</button>  
 </li>
 </ul>
-<p *ngIf="selezionato !== undefined"> il post-it {{selezionato.nome}}selezionato è del {{selezionato.temperatura}}
+<p *ngIf="selezionato !== undefined"> il post-it {{selezionato.nome}} selezionato è del {{selezionato.temperatura}}
 <button (click) = 'clean()'>Chiudi</button>
 </p>

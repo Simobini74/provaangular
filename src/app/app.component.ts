@@ -20,19 +20,19 @@ export class AppComponent {
   selezionato: Postit; 
   postit:Array<Postit> = [
     {
-      nome: 'Post-it 1',
+      nome: 'Torino',
       data: '14 luglio',
       colore: 'rosso',
       contenuto: 'pippo',
       temperatura:'25 gradi'
     }, {
-      nome: 'Post-it 2',
+      nome: 'Milano',
       data: '14 agosto',
       colore: 'verde',
       contenuto: 'pluto',
       temperatura: '30 gradi'
     }, {
-      nome: 'Post-it 3',
+      nome: 'Genova',
       data: '18 maggio',
       colore:'blu',
       contenuto:'paperino',
