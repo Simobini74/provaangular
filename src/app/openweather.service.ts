@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 
-@Injectable(
-  providedIn: 'root'
+@Injectable({
+  providedIn: 'root'}
 )
 export class OpenweatherService {
   apiKEY: string = 'f2e72c0506fe42ca90fe869aeca6b59a'
