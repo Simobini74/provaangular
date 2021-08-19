@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'; 
 
+
 class Postit {
   nome: string;
   data: string;
