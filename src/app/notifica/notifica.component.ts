@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { cityTemp } from '../app.component'
 
-
 @Component({
   selector: 'app-notifica',
   templateUrl: './notifica.component.html',
