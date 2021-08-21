@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { cityTemp } from '../app.component'
 
 @Component({
@@ -7,7 +7,7 @@ import { cityTemp } from '../app.component'
   styleUrls: ['./notifica.component.css']
 })
 export class NotificaComponent implements OnInit {
-
+  @Input() selezione: cityTemp;
   constructor() { }
   clean() {
     this.selezione.luogo=undefined;
