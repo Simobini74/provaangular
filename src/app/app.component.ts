@@ -1,11 +1,10 @@
 import { Component } from '@angular/core'; 
 import { OpenweatherService } from './openweather.service';
 
-class cityTemp {
+export class cityTemp {
   luogo: string;
   valore: string
 }
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
