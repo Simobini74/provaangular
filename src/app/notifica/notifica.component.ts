@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class NotificaComponent implements OnInit {
 
   constructor() { }
-
+  clean() {
+    this.selezione.luogo=undefined;
+  }
   ngOnInit() {
   }
 

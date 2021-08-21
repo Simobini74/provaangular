@@ -26,6 +26,6 @@ export class AppComponent {
  }
 
   clean() {
-    this.selezione=undefined;
+    this.selezione.luogo=undefined;
   }
 }
