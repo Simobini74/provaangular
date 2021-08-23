@@ -7,10 +7,10 @@ import { cityTemp } from '../app.component'
   styleUrls: ['./notifica.component.css']
 })
 export class NotificaComponent implements OnInit {
-  @Input() selezione: cityTemp;
+  @Input() selezioneC: cityTemp;
   constructor() { }
   clean() {
-    this.selezione.luogo=undefined;
+    this.selezioneC.luogo=undefined;
   }
   ngOnInit() {
   }
