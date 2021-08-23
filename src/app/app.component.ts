@@ -24,6 +24,9 @@ export class AppComponent {
     );
  }
 
+ addCity(newCity: string) {
+  this.postit.push(newCity);
+}
   clean() {
     this.selezione.luogo=undefined;
   }

@@ -1,11 +1,11 @@
-import { Component,Output,EventEmitter, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-new-city',
+  selector: 'app-newcity',
   templateUrl: './new-city.component.html',
   styleUrls: ['./new-city.component.css']
 })
-export class NewCityComponent implements OnInit {
+export class NewcityComponent implements OnInit {
   @Output() newCityEvent = new EventEmitter<string>();
   constructor() { }
   newCity(newName: string) {
